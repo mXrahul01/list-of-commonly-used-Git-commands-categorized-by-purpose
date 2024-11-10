@@ -1,0 +1,160 @@
+1.Setting Up a Repository
+Initialize a new Git repository
+bash
+Copy code
+git init
+Clone an existing repository
+bash
+Copy code
+git clone <repository_url>
+2. Basic Configuration
+Set your name
+bash
+Copy code
+git config --global user.name "Your Name"
+Set your email
+bash
+Copy code
+git config --global user.email "you@example.com"
+3. Staging and Committing Changes
+Check the status of your repository
+bash
+Copy code
+git status
+Add a single file to staging
+bash
+Copy code
+git add <file_name>
+Add all files to staging
+bash
+Copy code
+git add .
+Commit changes with a message
+bash
+Copy code
+git commit -m "Commit message"
+4. Branching
+List all branches
+bash
+Copy code
+git branch
+Create a new branch
+bash
+Copy code
+git branch <branch_name>
+Switch to a branch
+bash
+Copy code
+git checkout <branch_name>
+Create and switch to a new branch
+bash
+Copy code
+git checkout -b <branch_name>
+Rename the current branch
+bash
+Copy code
+git branch -m <new_branch_name>
+5. Merging and Rebasing
+Merge another branch into your current branch
+bash
+Copy code
+git merge <branch_name>
+Rebase your branch onto another branch
+bash
+Copy code
+git rebase <branch_name>
+6. Pulling and Pushing Changes
+Pull changes from the remote repository
+bash
+Copy code
+git pull origin <branch_name>
+Push changes to the remote repository
+bash
+Copy code
+git push origin <branch_name>
+Set up tracking information and push
+bash
+Copy code
+git push -u origin <branch_name>
+7. Undoing Changes
+Unstage a file
+bash
+Copy code
+git reset <file_name>
+Undo the last commit (keep changes)
+bash
+Copy code
+git reset --soft HEAD~1
+Undo the last commit (discard changes)
+bash
+Copy code
+git reset --hard HEAD~1
+Restore a file to the last committed state
+bash
+Copy code
+git checkout -- <file_name>
+8. Working with Remotes
+Add a new remote
+bash
+Copy code
+git remote add <name> <url>
+View all remotes
+bash
+Copy code
+git remote -v
+Remove a remote
+bash
+Copy code
+git remote remove <name>
+9. Viewing History and Logs
+Show commit history
+bash
+Copy code
+git log
+Show commit history with one-line summaries
+bash
+Copy code
+git log --oneline
+Show a specific commit
+bash
+Copy code
+git show <commit_hash>
+10. Stashing Changes
+Stash uncommitted changes
+bash
+Copy code
+git stash
+List stashes
+bash
+Copy code
+git stash list
+Apply the latest stash
+bash
+Copy code
+git stash apply
+Apply and drop a specific stash
+bash
+Copy code
+git stash pop <stash_id>
+11. Git Large File Storage (LFS)
+Install Git LFS
+bash
+Copy code
+git lfs install
+Track a large file with LFS
+bash
+Copy code
+git lfs track "<file_name>"
+Push LFS-tracked files
+bash
+Copy code
+git push origin <branch_name>
+12. Git Configurations and Helpers
+Check global configuration
+bash
+Copy code
+git config --list
+Enable color output in Git
+bash
+Copy code
+git config --global color.ui auto
